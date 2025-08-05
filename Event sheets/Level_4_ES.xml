@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level_4_ES</name>
+    <events>
+        <variable constant="0" name="skor4" sid="908569268393176" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPostX" sid="429846413067134" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPostY" sid="972156778733492" static="0" type="number">0</variable>
+        <variable constant="0" name="countSA4" sid="923172196999805" static="0" type="number">0</variable>
+        <event-block sid="656717163059066">
+            <conditions>
+                <condition id="0" name="On function" sid="225887013138107" type="Function">
+                    <param id="0" name="Name">&quot;init&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="958883287403752" type="System">
+                    <param id="0" name="Object to create">SAnOrganik4</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_1.X</param>
+                    <param id="3" name="Y">Post_1.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="265175732134182" type="System">
+                    <param id="0" name="Object to create">SOrganik4</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_2.X</param>
+                    <param id="3" name="Y">Post_2.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="248012656106536" type="System">
+                    <param id="0" name="Object to create">SB3</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_3.X</param>
+                    <param id="3" name="Y">Post_3.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="754253753418371" type="System">
+                    <param id="0" name="Object to create">SAnOrganik4</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_4.X</param>
+                    <param id="3" name="Y">Post_4.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="892496608126927" type="System">
+                    <param id="0" name="Object to create">SOrganik4</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_5.X</param>
+                    <param id="3" name="Y">Post_5.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="343457050544690" type="System">
+                    <param id="0" name="Object to create">SB3</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_6.X</param>
+                    <param id="3" name="Y">Post_6.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="973887137048696" type="System">
+                    <param id="0" name="Object to create">SAnOrganik4</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_7.X</param>
+                    <param id="3" name="Y">Post_7.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="479498454270143" type="System">
+                    <param id="0" name="Object to create">SOrganik4</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_8.X</param>
+                    <param id="3" name="Y">Post_8.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="500257483368883" type="System">
+                    <param id="0" name="Object to create">SB3</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Post_9.X</param>
+                    <param id="3" name="Y">Post_9.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="358292231364701">
+            <conditions>
+                <condition id="-18" name="On created" sid="616021365858353" type="SAnOrganik4" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="727853794788476" type="SAnOrganik4">
+                    <param id="0" name="Frame number">int(random(0,3))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316792253366999">
+            <conditions>
+                <condition id="-18" name="On created" sid="930351477359280" type="SOrganik4" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="306065654473214" type="SOrganik4">
+                    <param id="0" name="Frame number">int(random(0,3))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="949096506996252">
+            <conditions>
+                <condition id="-18" name="On created" sid="587889478404081" type="SB3" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="873058618935274" type="SB3">
+                    <param id="0" name="Frame number">int(random(0,3))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="392706927730781">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="534752238041349" type="SAnOrganik4" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="726872883773440" type="System">
+                    <param id="0" name="Variable">lastPostX</param>
+                    <param id="1" name="Value">SAnOrganik4.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="454102837827491" type="System">
+                    <param id="0" name="Variable">lastPostY</param>
+                    <param id="1" name="Value">SAnOrganik4.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="596474596647939">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="237317900062652" type="SAnOrganik4" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="614450782270197">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="450774449648735" type="SAnOrganik4">
+                            <param id="0" name="Object">TsAnorganik4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="587912548948631" type="SAnOrganik4" />
+                        <action id="-10" name="Add to" sid="794842911796073" type="System">
+                            <param id="0" name="Variable">countSA4</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="209247060275565" type="Function">
+                            <param id="0" name="Name">&quot;selesai&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="790142230326921">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="295207134800262" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="887768702519814" type="SAnOrganik4">
+                            <param id="0" name="X">lastPostX</param>
+                            <param id="1" name="Y">lastPostY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="879096729536816">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="184752613042856" type="SOrganik4" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="415907700723244" type="System">
+                    <param id="0" name="Variable">lastPostX</param>
+                    <param id="1" name="Value">SOrganik4.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="980101325413280" type="System">
+                    <param id="0" name="Variable">lastPostY</param>
+                    <param id="1" name="Value">SOrganik4.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674930236646097">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="977777348351555" type="SOrganik4" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="403398278850114">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="575251312964397" type="SOrganik4">
+                            <param id="0" name="Object">TsOrganik4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="243421238081349" type="SOrganik4" />
+                        <action id="-10" name="Add to" sid="278699514749019" type="System">
+                            <param id="0" name="Variable">countSA4</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="904333572664253" type="Function">
+                            <param id="0" name="Name">&quot;selesai&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="114689995715568">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="329304803154361" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="183120925910520" type="SOrganik4">
+                            <param id="0" name="X">lastPostX</param>
+                            <param id="1" name="Y">lastPostY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="431717388197941">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="896901202212807" type="SB3" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="796059293488841" type="System">
+                    <param id="0" name="Variable">lastPostX</param>
+                    <param id="1" name="Value">SB3.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="729230496389125" type="System">
+                    <param id="0" name="Variable">lastPostY</param>
+                    <param id="1" name="Value">SB3.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="602701845133090">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="825891659139245" type="SB3" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="936729138960424">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="236395598270403" type="SB3">
+                            <param id="0" name="Object">TsB3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="702867644249908" type="SB3" />
+                        <action id="-10" name="Add to" sid="211099506706173" type="System">
+                            <param id="0" name="Variable">countSA4</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="198890167658591" type="Function">
+                            <param id="0" name="Name">&quot;selesai&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="221675105906281">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="480294383595240" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="205285045818579" type="SAnOrganik4">
+                            <param id="0" name="X">lastPostX</param>
+                            <param id="1" name="Y">lastPostY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="685462534635847">
+            <conditions>
+                <condition id="0" name="On function" sid="980849895166392" type="Function">
+                    <param id="0" name="Name">&quot;selesai&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="936922431661925">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="416073655295646" type="System">
+                            <param id="0" name="Variable">countSA4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="472626403801938">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="211465639844995" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="743642673309707" type="Function">
+                    <param id="0" name="Name">&quot;init&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
