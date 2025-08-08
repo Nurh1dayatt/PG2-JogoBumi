@@ -25,8 +25,12 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -1728,106 +1732,11 @@
             </object-type>
         </object-folder>
         <object-folder name="LevelListAsset">
-            <object-type name="LevelListBoard" sid="606186407941952">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847617984760279" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Board (1).png">
-                            <collision-poly>
-                                <point x="0.108421" y="0.143056" />
-                                <point x="0.5" y="0.206944" />
-                                <point x="0.861053" y="0.183333" />
-                                <point x="0.889474" y="0.854167" />
-                                <point x="0.5" y="0.819444" />
-                                <point x="0.128421" y="0.830556" />
-                                <point x="0.136842" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="EasyLevelButton" sid="509896031190813">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Sine" sid="400655147259714">
-                        <behavior id="Sin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985528838302770" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Easy-Level (2).png">
-                            <collision-poly>
-                                <point x="0.0226415" y="0.0213523" />
-                                <point x="0.5" y="0" />
-                                <point x="0.977359" y="0.0213523" />
-                                <point x="1" y="0.5" />
-                                <point x="0.977359" y="0.978648" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0226415" y="0.978648" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="TxTitleLevelBoardList" sid="806634838084049">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="MediumLevelButton" sid="883145444975728">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Sine" sid="473261185864233">
-                        <behavior id="Sin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="226886507640853" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Medium-Level.png">
-                            <collision-poly>
-                                <point x="0.0226415" y="0.0213523" />
-                                <point x="0.5" y="0" />
-                                <point x="0.977359" y="0.0213523" />
-                                <point x="1" y="0.5" />
-                                <point x="0.977359" y="0.978648" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0226415" y="0.978648" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="HardLevelButton" sid="533652831986326">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Sine" sid="289535748857674">
-                        <behavior id="Sin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156966184456517" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Hard-Level.png">
-                            <collision-poly>
-                                <point x="0.0226415" y="0.0213523" />
-                                <point x="0.5" y="0" />
-                                <point x="0.977359" y="0.0213523" />
-                                <point x="1" y="0.5" />
-                                <point x="0.977359" y="0.978648" />
-                                <point x="0.5" y="1" />
-                                <point x="0.0226415" y="0.978648" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="LevelListHomeButton" sid="392273224991156">
                 <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Sine" sid="541900181475816">
-                        <behavior id="Sin" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868534514763163" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\TbHome (1).png">
@@ -1848,6 +1757,105 @@
             <object-type name="BG_LevelList" sid="742774560338138">
                 <plugin id="TiledBg" />
                 <texture original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\bg-easy-game (1).png" />
+            </object-type>
+            <object-type name="buttonlvl" sid="208699200198739">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398642927554461" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Button-level\button-level-1-color.png">
+                            <collision-poly>
+                                <point x="0.285417" y="0.285417" />
+                                <point x="0.5" y="0.241667" />
+                                <point x="0.7125" y="0.2875" />
+                                <point x="0.9125" y="0.5" />
+                                <point x="0.70625" y="0.70625" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.29375" y="0.70625" />
+                                <point x="0.0875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Button-level\button-level-1.2-color.png">
+                            <collision-poly>
+                                <point x="0.285417" y="0.285417" />
+                                <point x="0.5" y="0.241667" />
+                                <point x="0.7125" y="0.2875" />
+                                <point x="0.9125" y="0.5" />
+                                <point x="0.70625" y="0.70625" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.29375" y="0.70625" />
+                                <point x="0.0875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Button-level\button-level-2-color.png">
+                            <collision-poly>
+                                <point x="0.285417" y="0.285417" />
+                                <point x="0.5" y="0.241667" />
+                                <point x="0.7125" y="0.2875" />
+                                <point x="0.9125" y="0.5" />
+                                <point x="0.70625" y="0.70625" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.29375" y="0.70625" />
+                                <point x="0.0875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Button-level\button-level-2.2-color.png">
+                            <collision-poly>
+                                <point x="0.285417" y="0.285417" />
+                                <point x="0.5" y="0.241667" />
+                                <point x="0.7125" y="0.2875" />
+                                <point x="0.9125" y="0.5" />
+                                <point x="0.70625" y="0.70625" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.29375" y="0.70625" />
+                                <point x="0.0875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Button-level\button-level-3-color.png">
+                            <collision-poly>
+                                <point x="0.285417" y="0.285417" />
+                                <point x="0.5" y="0.241667" />
+                                <point x="0.7125" y="0.2875" />
+                                <point x="0.9125" y="0.5" />
+                                <point x="0.70625" y="0.70625" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.29375" y="0.70625" />
+                                <point x="0.0875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Button-level\button-level-3.2-color.png">
+                            <collision-poly>
+                                <point x="0.285417" y="0.285417" />
+                                <point x="0.5" y="0.241667" />
+                                <point x="0.7125" y="0.2875" />
+                                <point x="0.9125" y="0.5" />
+                                <point x="0.70625" y="0.70625" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.29375" y="0.70625" />
+                                <point x="0.0875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Button-level\button-level-4-color.png">
+                            <collision-poly>
+                                <point x="0.285417" y="0.285417" />
+                                <point x="0.5" y="0.241667" />
+                                <point x="0.7125" y="0.2875" />
+                                <point x="0.9125" y="0.5" />
+                                <point x="0.70625" y="0.70625" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.29375" y="0.70625" />
+                                <point x="0.0875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="o" sid="391065294146402">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="384601315576916" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Game_Info">
@@ -2425,6 +2433,28 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="skipac" sid="817057781722202">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="skipbtn" sid="294803508919838">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700065939999694" speed="5">
+                        <frame duration="1" hotspotX="0.501567" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\Group 10.png">
+                            <collision-poly>
+                                <point x="0.0532915" y="0.137097" />
+                                <point x="0.498433" y="0" />
+                                <point x="0.931035" y="0.177419" />
+                                <point x="0.968652" y="0.5" />
+                                <point x="0.915361" y="0.782258" />
+                                <point x="0.498433" y="0.919355" />
+                                <point x="0.0689655" y="0.822581" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="UIKarakter">
             <object-type name="tara" sid="892296352789743">
@@ -2797,14 +2827,16 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-type name="TbPlay" sid="762587376853102">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="536840056373201" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbPlay.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
+        <object-folder name="SubLvl1">
+            <object-type name="bg_sublvl1" sid="805194656744351">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944036015564563" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\images\Subgame Rumah Menuju ke Taman Bermain.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Touch" sid="208015409852910">
             <plugin id="Touch" />
         </object-type>
@@ -2820,61 +2852,64 @@
         <object-type name="alurgame" sid="193743137484893">
             <plugin id="video" />
         </object-type>
-        <object-type name="skipac" sid="817057781722202">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="skipbtn" sid="294803508919838">
+        <object-type name="awan" sid="388514540102892">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="623266693118947">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700065939999694" speed="5">
-                    <frame duration="1" hotspotX="0.501567" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\Group 10.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573271186706897" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Downloads\Desain Grafis.png">
                         <collision-poly>
-                            <point x="0.0532915" y="0.137097" />
-                            <point x="0.498433" y="0" />
-                            <point x="0.931035" y="0.177419" />
-                            <point x="0.968652" y="0.5" />
-                            <point x="0.915361" y="0.782258" />
-                            <point x="0.498433" y="0.919355" />
-                            <point x="0.0689655" y="0.822581" />
-                            <point x="0" y="0.5" />
+                            <point x="0.205556" y="0.365132" />
+                            <point x="0.5" y="0.196546" />
+                            <point x="0.822685" y="0.314967" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.861574" y="0.754112" />
+                            <point x="0.5" y="0.765625" />
+                            <point x="0.171759" y="0.694901" />
+                            <point x="0.0712963" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Bg_lvl4" sid="899817105235670">
+        <object-type name="lantai1" sid="805809402642287">
             <plugin id="TiledBg" />
-            <texture original-source="D:\FOLDER KULIAH\SEMESTER 6\Pemrograman Game 2\Asset-lvl4\level4.png" />
+            <behaviors>
+                <behavior-type name="Solid" sid="256295668047624">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="145178098086261">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture />
         </object-type>
-        <object-type name="TsNonOrganik" sid="455207719052459">
+        <object-type name="player" sid="673245291327118">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="873073814208951">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="218269724237615">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="610154501827615" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 6\Pemrograman Game 2\Asset-lvl4\ts-an.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SNonOrganik" sid="338606552177439">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="710831540152454" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SAnorganik" sid="367276475039063">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="221244074378120" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 6\Pemrograman Game 2\Asset-lvl4\sampah-an-04.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184504344318196" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\Idle-Karakter\Tara\idle.png">
                         <collision-poly>
-                            <point x="0.364583" y="0.645032" />
-                            <point x="0.5" y="0.247997" />
-                            <point x="0.723053" y="0.489984" />
-                            <point x="0.730752" y="0.523638" />
-                            <point x="0.5" y="0.79367" />
-                            <point x="0.302083" y="0.465545" />
-                            <point x="0.324049" y="0.5" />
+                            <point x="0.292593" y="0.164583" />
+                            <point x="0.5" y="0.140625" />
+                            <point x="0.69537" y="0.171354" />
+                            <point x="0.717593" y="0.5" />
+                            <point x="0.697222" y="0.829687" />
+                            <point x="0.5" y="0.916667" />
+                            <point x="0.369444" y="0.792188" />
+                            <point x="0.355556" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -2901,6 +2936,7 @@
         <layout>Tutor_Hard_LO.xml</layout>
         <layout>Alur_Game_LO.xml</layout>
         <layout>Level_4_LO.xml</layout>
+        <layout>SubLvl1_LO.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game_Easy_ES.xml</event-sheet>
@@ -2913,8 +2949,9 @@
         <event-sheet>Tutor_Easy_SE.xml</event-sheet>
         <event-sheet>Tutor_Medium_ES.xml</event-sheet>
         <event-sheet>Tutor_Hard_ES.xml</event-sheet>
-        <event-sheet>Alus_Game_ES.xml</event-sheet>
+        <event-sheet>Alur_Game_ES.xml</event-sheet>
         <event-sheet>Level_4_ES.xml</event-sheet>
+        <event-sheet>SubLvl1_ES.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="4">
