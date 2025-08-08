@@ -29,60 +29,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="949851208871776">
-            <conditions>
-                <condition id="17" name="On tap object" sid="901459968766484" type="Touch">
-                    <param id="0" name="Object">EasyLevelButton</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="132374256945574" type="System">
-                    <param id="0" name="Layout">Tutor_Easy_LO</param>
-                </action>
-                <action id="0" name="Play" sid="766453026514671" type="Audio">
-                    <param id="0" name="Audio file">button_click</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="464735963140245">
-            <conditions>
-                <condition id="17" name="On tap object" sid="236934439835581" type="Touch">
-                    <param id="0" name="Object">MediumLevelButton</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="457812615000242" type="System">
-                    <param id="0" name="Layout">Tutor_Medium_LO</param>
-                </action>
-                <action id="0" name="Play" sid="554405039964686" type="Audio">
-                    <param id="0" name="Audio file">button_click</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="715554066618300">
-            <conditions>
-                <condition id="17" name="On tap object" sid="875810506085731" type="Touch">
-                    <param id="0" name="Object">HardLevelButton</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="491245469972258" type="System">
-                    <param id="0" name="Layout">Tutor_Hard_LO</param>
-                </action>
-                <action id="0" name="Play" sid="159749983389337" type="Audio">
-                    <param id="0" name="Audio file">button_click</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="150278054422548">
             <conditions>
                 <condition id="17" name="On tap object" sid="137755401664541" type="Touch">
@@ -104,6 +50,119 @@
                     <param id="0" name="Layout">Home_LO</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="835417518281866">
+            <conditions>
+                <condition id="17" name="On tap object" sid="181038604045548" type="Touch">
+                    <param id="0" name="Object">buttonlvl</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="222612765014724">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="200492273662244" type="buttonlvl">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="132374256945574" type="System">
+                            <param id="0" name="Layout">Tutor_Easy_LO</param>
+                        </action>
+                        <action id="0" name="Play" sid="766453026514671" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="794043020716935">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="135673984318343" type="buttonlvl">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="749677999842773">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="817887503218378" type="buttonlvl">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="457812615000242" type="System">
+                            <param id="0" name="Layout">Tutor_Medium_LO</param>
+                        </action>
+                        <action id="0" name="Play" sid="554405039964686" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="221481217097893">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="680511669421513" type="buttonlvl">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="607271104139442">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="740590309316356" type="buttonlvl">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="491245469972258" type="System">
+                            <param id="0" name="Layout">Tutor_Hard_LO</param>
+                        </action>
+                        <action id="0" name="Play" sid="159749983389337" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="320690238817742">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="484967763229818" type="buttonlvl">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="994231880789102">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="316294842350913" type="buttonlvl">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="826315458454505" type="System">
+                            <param id="0" name="Layout">Level_4_LO</param>
+                        </action>
+                        <action id="0" name="Play" sid="342689609979701" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
