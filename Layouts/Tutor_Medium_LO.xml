@@ -54,7 +54,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layout" sid="101089916510480">
+        <layer name="isi_ly2" sid="101089916510480">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>

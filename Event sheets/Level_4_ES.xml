@@ -7,10 +7,22 @@
         <variable constant="0" name="lastPostX" sid="429846413067134" static="0" type="number">0</variable>
         <variable constant="0" name="lastPostY" sid="972156778733492" static="0" type="number">0</variable>
         <variable constant="0" name="countSA4" sid="923172196999805" static="0" type="number">0</variable>
+        <event-block sid="357804272031253">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="776056913248244" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="932746121158640" type="System" />
+                <action id="0" name="Call function" sid="693668580726713" type="Function">
+                    <param id="0" name="Name">&quot;init_lvl4&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="656717163059066">
             <conditions>
                 <condition id="0" name="On function" sid="225887013138107" type="Function">
-                    <param id="0" name="Name">&quot;init&quot;</param>
+                    <param id="0" name="Name">&quot;init_lvl4&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -68,6 +80,13 @@
                     <param id="2" name="X">Post_9.X</param>
                     <param id="3" name="Y">Post_9.Y</param>
                 </action>
+                <action id="33" name="Stop all" sid="139734386897878" type="Audio" />
+                <action id="0" name="Play" sid="105692962053655" type="Audio">
+                    <param id="0" name="Audio file">medium</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="358292231364701">
@@ -100,166 +119,262 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="392706927730781">
-            <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="534752238041349" type="SAnOrganik4" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="726872883773440" type="System">
-                    <param id="0" name="Variable">lastPostX</param>
-                    <param id="1" name="Value">SAnOrganik4.X</param>
-                </action>
-                <action id="-9" name="Set value" sid="454102837827491" type="System">
-                    <param id="0" name="Variable">lastPostY</param>
-                    <param id="1" name="Value">SAnOrganik4.Y</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="596474596647939">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="237317900062652" type="SAnOrganik4" />
-            </conditions>
-            <actions />
+        <event-group description="Semua fungsi dari sampah anorganik" sid="844674051539436" title="Fungsi Sampah AnOrganik">
             <sub-events>
-                <event-block sid="614450782270197">
+                <event-block sid="392706927730781">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="450774449648735" type="SAnOrganik4">
-                            <param id="0" name="Object">TsAnorganik4</param>
-                        </condition>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="534752238041349" type="SAnOrganik4" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="587912548948631" type="SAnOrganik4" />
-                        <action id="-10" name="Add to" sid="794842911796073" type="System">
-                            <param id="0" name="Variable">countSA4</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="-9" name="Set value" sid="726872883773440" type="System">
+                            <param id="0" name="Variable">lastPostX</param>
+                            <param id="1" name="Value">SAnOrganik4.X</param>
                         </action>
-                        <action id="0" name="Call function" sid="209247060275565" type="Function">
-                            <param id="0" name="Name">&quot;selesai&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
+                        <action id="-9" name="Set value" sid="454102837827491" type="System">
+                            <param id="0" name="Variable">lastPostY</param>
+                            <param id="1" name="Value">SAnOrganik4.Y</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="790142230326921">
+                <event-block sid="596474596647939">
                     <conditions>
-                        <condition id="-22" name="Else" sid="295207134800262" type="System" />
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="237317900062652" type="SAnOrganik4" />
                     </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="887768702519814" type="SAnOrganik4">
-                            <param id="0" name="X">lastPostX</param>
-                            <param id="1" name="Y">lastPostY</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="614450782270197">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="450774449648735" type="SAnOrganik4">
+                                    <param id="0" name="Object">TsAnorganik4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="587912548948631" type="SAnOrganik4" />
+                                <action id="-10" name="Add to" sid="794842911796073" type="System">
+                                    <param id="0" name="Variable">countSA4</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="236795628160899" type="System">
+                                    <param id="0" name="Variable">skor4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="0" name="Call function" sid="669123249078050" type="Function">
+                                    <param id="0" name="Name">&quot;selesai_lvl4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Play" sid="419789076293160" type="Audio">
+                                    <param id="0" name="Audio file">sound-right</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="790142230326921">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="295207134800262" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="887768702519814" type="SAnOrganik4">
+                                    <param id="0" name="X">lastPostX</param>
+                                    <param id="1" name="Y">lastPostY</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="181653769663505" type="System">
+                                    <param id="0" name="Variable">skor4</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="0" name="Play" sid="151272813914222" type="Audio">
+                                    <param id="0" name="Audio file">sound-wrong</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="879030489490896" type="System">
+                                    <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="237006443639945" type="Function">
+                                    <param id="0" name="Name">&quot;pop-in4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="879096729536816">
-            <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="184752613042856" type="SOrganik4" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="415907700723244" type="System">
-                    <param id="0" name="Variable">lastPostX</param>
-                    <param id="1" name="Value">SOrganik4.X</param>
-                </action>
-                <action id="-9" name="Set value" sid="980101325413280" type="System">
-                    <param id="0" name="Variable">lastPostY</param>
-                    <param id="1" name="Value">SOrganik4.Y</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="674930236646097">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="977777348351555" type="SOrganik4" />
-            </conditions>
-            <actions />
+        </event-group>
+        <event-group description="Semua fungsi sampah organik" sid="511179940117594" title="Fungsi Sampah Organik">
             <sub-events>
-                <event-block sid="403398278850114">
+                <event-block sid="879096729536816">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="575251312964397" type="SOrganik4">
-                            <param id="0" name="Object">TsOrganik4</param>
-                        </condition>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="184752613042856" type="SOrganik4" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="243421238081349" type="SOrganik4" />
-                        <action id="-10" name="Add to" sid="278699514749019" type="System">
-                            <param id="0" name="Variable">countSA4</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="-9" name="Set value" sid="415907700723244" type="System">
+                            <param id="0" name="Variable">lastPostX</param>
+                            <param id="1" name="Value">SOrganik4.X</param>
                         </action>
-                        <action id="0" name="Call function" sid="904333572664253" type="Function">
-                            <param id="0" name="Name">&quot;selesai&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
+                        <action id="-9" name="Set value" sid="980101325413280" type="System">
+                            <param id="0" name="Variable">lastPostY</param>
+                            <param id="1" name="Value">SOrganik4.Y</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="114689995715568">
+                <event-block sid="674930236646097">
                     <conditions>
-                        <condition id="-22" name="Else" sid="329304803154361" type="System" />
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="977777348351555" type="SOrganik4" />
                     </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="183120925910520" type="SOrganik4">
-                            <param id="0" name="X">lastPostX</param>
-                            <param id="1" name="Y">lastPostY</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="403398278850114">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="575251312964397" type="SOrganik4">
+                                    <param id="0" name="Object">TsOrganik4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="243421238081349" type="SOrganik4" />
+                                <action id="-10" name="Add to" sid="278699514749019" type="System">
+                                    <param id="0" name="Variable">countSA4</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="279496625950196" type="System">
+                                    <param id="0" name="Variable">skor4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="0" name="Call function" sid="904333572664253" type="Function">
+                                    <param id="0" name="Name">&quot;selesai_lvl4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Play" sid="318238413781939" type="Audio">
+                                    <param id="0" name="Audio file">sound-right</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="114689995715568">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="329304803154361" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="183120925910520" type="SOrganik4">
+                                    <param id="0" name="X">lastPostX</param>
+                                    <param id="1" name="Y">lastPostY</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="679429480022136" type="System">
+                                    <param id="0" name="Variable">skor4</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="0" name="Play" sid="542058175572205" type="Audio">
+                                    <param id="0" name="Audio file">sound-wrong</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="604160460309025" type="System">
+                                    <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="300030908502619" type="Function">
+                                    <param id="0" name="Name">&quot;pop-in4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="431717388197941">
-            <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="896901202212807" type="SB3" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="796059293488841" type="System">
-                    <param id="0" name="Variable">lastPostX</param>
-                    <param id="1" name="Value">SB3.X</param>
-                </action>
-                <action id="-9" name="Set value" sid="729230496389125" type="System">
-                    <param id="0" name="Variable">lastPostY</param>
-                    <param id="1" name="Value">SB3.Y</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="602701845133090">
-            <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="825891659139245" type="SB3" />
-            </conditions>
-            <actions />
+        </event-group>
+        <event-group description="Semua fungsi sampah b3" sid="160619735832910" title="Fungsi Sampah B3">
             <sub-events>
-                <event-block sid="936729138960424">
+                <event-block sid="431717388197941">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="236395598270403" type="SB3">
-                            <param id="0" name="Object">TsB3</param>
-                        </condition>
+                        <condition behavior="DragDrop" id="1" name="On drag start" sid="896901202212807" type="SB3" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="702867644249908" type="SB3" />
-                        <action id="-10" name="Add to" sid="211099506706173" type="System">
-                            <param id="0" name="Variable">countSA4</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="-9" name="Set value" sid="796059293488841" type="System">
+                            <param id="0" name="Variable">lastPostX</param>
+                            <param id="1" name="Value">SB3.X</param>
                         </action>
-                        <action id="0" name="Call function" sid="198890167658591" type="Function">
-                            <param id="0" name="Name">&quot;selesai&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
+                        <action id="-9" name="Set value" sid="729230496389125" type="System">
+                            <param id="0" name="Variable">lastPostY</param>
+                            <param id="1" name="Value">SB3.Y</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="221675105906281">
+                <event-block sid="602701845133090">
                     <conditions>
-                        <condition id="-22" name="Else" sid="480294383595240" type="System" />
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="825891659139245" type="SB3" />
                     </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="205285045818579" type="SAnOrganik4">
-                            <param id="0" name="X">lastPostX</param>
-                            <param id="1" name="Y">lastPostY</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="936729138960424">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="236395598270403" type="SB3">
+                                    <param id="0" name="Object">TsB3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="702867644249908" type="SB3" />
+                                <action id="-10" name="Add to" sid="211099506706173" type="System">
+                                    <param id="0" name="Variable">countSA4</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="448271080051200" type="System">
+                                    <param id="0" name="Variable">skor4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="0" name="Call function" sid="419729463164319" type="Function">
+                                    <param id="0" name="Name">&quot;selesai_lvl4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Play" sid="107386805432943" type="Audio">
+                                    <param id="0" name="Audio file">sound-right</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="221675105906281">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="480294383595240" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="205285045818579" type="SB3">
+                                    <param id="0" name="X">lastPostX</param>
+                                    <param id="1" name="Y">lastPostY</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="876420559672132" type="System">
+                                    <param id="0" name="Variable">skor4</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="0" name="Play" sid="978626303676419" type="Audio">
+                                    <param id="0" name="Audio file">sound-wrong</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="306790471467273" type="System">
+                                    <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="718178334579669" type="Function">
+                                    <param id="0" name="Name">&quot;pop-in4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
         <event-block sid="685462534635847">
             <conditions>
                 <condition id="0" name="On function" sid="980849895166392" type="Function">
-                    <param id="0" name="Name">&quot;selesai&quot;</param>
+                    <param id="0" name="Name">&quot;selesai_lvl4&quot;</param>
                 </condition>
             </conditions>
             <actions />
@@ -267,25 +382,397 @@
                 <event-block sid="936922431661925">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="416073655295646" type="System">
-                            <param id="0" name="Variable">countSA4</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
+                            <param id="0" name="Variable">skor4</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">50</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="843156031313132" type="System">
+                            <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="438597859299784" type="Function">
+                            <param id="0" name="Name">&quot;pop-in5&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="472626403801938">
+        <event-block sid="396003104998508">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="211465639844995" type="System" />
+                <condition id="-1" name="Every tick" sid="985491454789804" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Call function" sid="743642673309707" type="Function">
-                    <param id="0" name="Name">&quot;init&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
+                <action id="0" name="Set text" sid="429252312992231" type="TxSkor4">
+                    <param id="0" name="Text">skor4</param>
+                </action>
+                <action id="0" name="Set text" sid="908558689433205" type="TxScoreGMKalah">
+                    <param id="0" name="Text">skor4</param>
+                </action>
+                <action id="0" name="Set text" sid="641199366741160" type="TxScoreGMMenang">
+                    <param id="0" name="Text">skor4</param>
                 </action>
             </actions>
+        </event-block>
+        <event-group description="" sid="325628096299046" title="Setting Kalah Lvl4">
+            <sub-events>
+                <event-block sid="464605364511448">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="878495483815819" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="434820767459857" type="GameOverGM">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="291287078576317" type="TbHomeGMKalah">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="835473086784738" type="TbUlangiGMKalah">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="301376699402098" type="TxScoreGMKalah">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="529511910213391" type="TxSkorKamuGMKalah">
+                            <param id="0" name="Pin to">BoardGMKalah</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="263460623500722" type="BoardGMKalah">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="666706239588815" type="System">
+                            <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="811447314997249">
+                    <conditions>
+                        <condition id="0" name="On function" sid="146446284233367" type="Function">
+                            <param id="0" name="Name">&quot;pop-in4&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="388814591321788" type="BoardGMKalah">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="818548419759760" type="BoardGMKalah">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="550416135316937" type="BoardGMKalah">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="142936105426606">
+                    <conditions>
+                        <condition id="0" name="On function" sid="925520329240821" type="Function">
+                            <param id="0" name="Name">&quot;pop-out4&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="184585151669728" type="BoardGMKalah">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="836275672986236" type="BoardGMKalah">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="601971003593849" type="BoardGMKalah">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="102019440169477">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="729930893677860" type="System">
+                    <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="921049613864255">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="548077708146654" type="Touch">
+                            <param id="0" name="Object">TbHomeGMKalah</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="480184013571821" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="208160083409126" type="Function">
+                            <param id="0" name="Name">&quot;pop-out4&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="388304139377741" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="763641990765801" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="597030621330499" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="852451414791116">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="907430167924483" type="Touch">
+                            <param id="0" name="Object">TbUlangiGMKalah</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="902980981027755" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="397785438570419" type="Function">
+                            <param id="0" name="Name">&quot;pop-out4&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="873767055694190" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="117048475437806" type="System" />
+                        <action id="-4" name="Set layer visible" sid="346318507747041" type="System">
+                            <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="310219449018808">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="133282002007779" type="System">
+                    <param id="0" name="Layer">&quot;KalahGM&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="655278866880655">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="475949958370706" type="Touch">
+                            <param id="0" name="Object">home_lvl4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="317992812433237" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="620074317983468" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="646006448459537" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="687933462652004" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="752108883759557" title="Setting Menang Lvl4">
+            <sub-events>
+                <event-block sid="517759248080722">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="286392116680311" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="621333283050322" type="menangGM">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="571204522681721" type="TbUlangiGMMenang">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="518691692882637" type="TbHomeGMMenang">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="349020863077566" type="TxSkorKamuGMMenang">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="852638980008612" type="TxScoreGMMenang">
+                            <param id="0" name="Pin to">BoardGMMenang</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="362981773300464" type="BoardGMMenang">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="689395046226794" type="System">
+                            <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="806995036218821">
+                    <conditions>
+                        <condition id="0" name="On function" sid="444191519149772" type="Function">
+                            <param id="0" name="Name">&quot;pop-in5&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="980211237321100" type="BoardGMMenang">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="217997397052291" type="BoardGMMenang">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="987727160621840" type="BoardGMMenang">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="964879479030257">
+                    <conditions>
+                        <condition id="0" name="On function" sid="333179624577425" type="Function">
+                            <param id="0" name="Name">&quot;pop-out5&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="842501259226608" type="BoardGMMenang">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="638539563416126" type="BoardGMMenang">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="938421450007518" type="BoardGMMenang">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="858472552172593">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="499276882799960" type="System">
+                    <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="441090580706485">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="962818570123088" type="Touch">
+                            <param id="0" name="Object">TbHomeGMMenang</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="611209349071140" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="820974762230531" type="Function">
+                            <param id="0" name="Name">&quot;pop-out5&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="187191181642192" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="115501697399471" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="237935767893423" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="277622555031538">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="983385597074636" type="Touch">
+                            <param id="0" name="Object">TbUlangiGMMenang</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="769096457709664" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="615948012876885" type="Function">
+                            <param id="0" name="Name">&quot;pop-out5&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="608927780953566" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="731521465567428" type="System" />
+                        <action id="-4" name="Set layer visible" sid="281484019851356" type="System">
+                            <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="969938773440325">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="112567114656131" type="System">
+                    <param id="0" name="Layer">&quot;MenangGM&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="308109976590859">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="735528760086438" type="Touch">
+                            <param id="0" name="Object">home_lvl4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="569660775951576" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="762006210901668" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="751523362584456" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="869951294163198" type="System">
+                            <param id="0" name="Layout">Home_LO</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

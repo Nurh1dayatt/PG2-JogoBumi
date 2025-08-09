@@ -25,5 +25,85 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="756488869119861">
+            <conditions>
+                <condition id="3" name="On touched object" sid="402823521356879" type="Touch">
+                    <param id="0" name="Object">arah_1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="325735700149274" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="955162567248004">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="877059754264119" type="wiki">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">Self.AnimationFrameCount-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="803562334499930" type="wiki">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="822837161723872">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="700694866957923" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="953731211135184" type="wiki">
+                            <param id="0" name="Frame number">Self.AnimationFrame+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="379557428095775">
+            <conditions>
+                <condition id="3" name="On touched object" sid="883271622251895" type="Touch">
+                    <param id="0" name="Object">arah_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="810194113058680" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="556743451108262">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="806293774470119" type="wiki">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="113014823995649" type="wiki">
+                            <param id="0" name="Frame number">Self.AnimationFrameCount-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="757890550278813">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="710703066314253" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="732329637905928" type="wiki">
+                            <param id="0" name="Frame number">Self.AnimationFrame-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
