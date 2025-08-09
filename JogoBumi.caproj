@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -27,7 +28,6 @@
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -110,18 +110,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477014190930947" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbProfil.png">
-                            <collision-poly>
-                                <point x="0.145946" y="0.139175" />
-                                <point x="0.5" y="0" />
-                                <point x="0.848649" y="0.14433" />
-                                <point x="0.997297" y="0.5" />
-                                <point x="0.851351" y="0.858247" />
-                                <point x="0.5" y="0.997423" />
-                                <point x="0.151351" y="0.85567" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\TbHelp.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -406,18 +395,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="241072499494723" speed="5">
-                        <frame duration="1" hotspotX="0.502304" hotspotY="0.502203" original-source="D:\Construct2\Bahan\TbProfil 1.png">
-                            <collision-poly>
-                                <point x="0.147465" y="0.140969" />
-                                <point x="0.497696" y="0" />
-                                <point x="0.847926" y="0.145374" />
-                                <point x="0.995392" y="0.497797" />
-                                <point x="0.852535" y="0.859031" />
-                                <point x="0.497696" y="0.995595" />
-                                <point x="0.152074" y="0.854626" />
-                                <point x="0" y="0.497797" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.502304" hotspotY="0.502203" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\TbHelp.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -896,7 +874,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599290767767739" speed="5">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599290767767739" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Board (1).png">
                             <collision-poly>
                                 <point x="0.108421" y="0.143056" />
@@ -1857,6 +1835,57 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="awan" sid="388514540102892">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="623266693118947">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573271186706897" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Downloads\Desain Grafis.png">
+                            <collision-poly>
+                                <point x="0.205556" y="0.365132" />
+                                <point x="0.5" y="0.196546" />
+                                <point x="0.822685" y="0.314967" />
+                                <point x="0.875" y="0.5" />
+                                <point x="0.861574" y="0.754112" />
+                                <point x="0.5" y="0.765625" />
+                                <point x="0.171759" y="0.694901" />
+                                <point x="0.0712963" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="maptitlev" sid="810991850519099">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="661579209874157">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304365079247075" speed="0">
+                        <frame duration="1" hotspotX="0.500194" hotspotY="0.5" original-source="D:\Construct2\Bahan\Title Map\map-title-v4.png">
+                            <collision-poly>
+                                <point x="0.0663562" y="0.203571" />
+                                <point x="0.499806" y="0.335714" />
+                                <point x="0.925883" y="0.227381" />
+                                <point x="0.895227" y="0.5" />
+                                <point x="0.909585" y="0.722619" />
+                                <point x="0.499806" y="0.745238" />
+                                <point x="0.0578192" y="0.822619" />
+                                <point x="0.0155219" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500194" hotspotY="0.5" original-source="D:\Construct2\Bahan\Title Map\map-title-v1.png" />
+                        <frame duration="1" hotspotX="0.500194" hotspotY="0.5" original-source="D:\Construct2\Bahan\Title Map\map-title-v2.png" />
+                        <frame duration="1" hotspotX="0.500194" hotspotY="0.5" original-source="D:\Construct2\Bahan\Title Map\map-title-v3.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Game_Info">
             <object-type name="bginfo" sid="791396693335684">
@@ -2053,10 +2082,6 @@
             </object-type>
         </object-folder>
         <object-folder name="TimAsset">
-            <object-type name="BG_Tim" sid="532223683107276">
-                <plugin id="TiledBg" />
-                <texture original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\bg-easy-game (1).png" />
-            </object-type>
             <object-type name="TbHome_Tim" sid="903690939392182">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -2076,57 +2101,6 @@
                                 <point x="0.5" y="0.997423" />
                                 <point x="0.154054" y="0.853093" />
                                 <point x="0.0027027" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="jogobumiTIM" sid="910819292471099">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Sine" sid="489691894318874">
-                        <behavior id="Sin" />
-                    </behavior-type>
-                    <behavior-type name="Sine2" sid="424938129560804">
-                        <behavior id="Sin" />
-                    </behavior-type>
-                    <behavior-type name="Pin" sid="488321907329969">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367982002308482" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\jogo-bumi.png">
-                            <collision-poly>
-                                <point x="0.190435" y="0.336923" />
-                                <point x="0.5" y="0.147692" />
-                                <point x="0.814348" y="0.328462" />
-                                <point x="0.843913" y="0.5" />
-                                <point x="0.834565" y="0.707308" />
-                                <point x="0.5" y="0.796923" />
-                                <point x="0.181739" y="0.678462" />
-                                <point x="0.151957" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="anggota" sid="879461175233719">
-                <plugin id="Text" />
-            </object-type>
-            <object-type name="tim" sid="848753426259020">
-                <plugin id="Text" />
-            </object-type>
-            <object-type name="anggota2" sid="913987197879415">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="541803873386696" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\anggota.png">
-                            <collision-poly>
-                                <point x="0.00408381" y="0.0101232" />
-                                <point x="0.995916" y="0.0101232" />
-                                <point x="0.995916" y="0.989877" />
-                                <point x="0.00408381" y="0.989877" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -2178,9 +2152,56 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="wiki" sid="568624639367537">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590060318678670" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\wiki-jenis-sampah.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\wiki-jenis-tong-sampah.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arah_1" sid="169401392585814">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="133836705830983" speed="5">
+                        <frame duration="1" hotspotX="0.498069" hotspotY="0.501901" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\button-left.png">
+                            <collision-poly>
+                                <point x="1" y="0.498099" />
+                                <point x="0.853282" y="0.855513" />
+                                <point x="0.50193" y="1" />
+                                <point x="0.146718" y="0.855513" />
+                                <point x="0.00386101" y="0.498099" />
+                                <point x="0.150579" y="0.148289" />
+                                <point x="0.50193" y="0" />
+                                <point x="0.853282" y="0.144487" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arah_2" sid="282217369874830">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="761126607307553" speed="5">
+                        <frame duration="1" hotspotX="0.50193" hotspotY="0.501901" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\button-left.png">
+                            <collision-poly>
+                                <point x="0.146718" y="0.144487" />
+                                <point x="0.49807" y="0" />
+                                <point x="0.849421" y="0.148289" />
+                                <point x="0.996139" y="0.498099" />
+                                <point x="0.853282" y="0.855513" />
+                                <point x="0.49807" y="1" />
+                                <point x="0.146718" y="0.855513" />
+                                <point x="0" y="0.498099" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="TutorAsset">
-            <object-folder name="Easy">
+            <object-folder name="Lvl1">
                 <object-type name="bgtutoreasy" sid="321877850938147">
                     <plugin id="Sprite" />
                     <animation-folder>
@@ -2238,7 +2259,7 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
-            <object-folder name="Medium">
+            <object-folder name="Lvl2">
                 <object-type name="bgtutormedium" sid="995957328251348">
                     <plugin id="Sprite" />
                     <animation-folder>
@@ -2296,7 +2317,7 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
-            <object-folder name="Hard">
+            <object-folder name="Lvl3">
                 <object-type name="btlefthard" sid="937440669338770">
                     <plugin id="Sprite" />
                     <behaviors>
@@ -2350,6 +2371,42 @@
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="130986963612694" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\bg-tutor-hard.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Lvl4">
+                <object-type name="tutor_lvl4" sid="474008264127561">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435759908347525" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\images\bg-tutor-lvl4 (1).png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="SubLvl">
+                <object-type name="bg_sub1" sid="573232077655960">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810562777710909" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Downloads\bg-tutor-sublvl-1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_sub2" sid="735019533534225">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517739436253880" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\images\bg-tutor-sublvl-2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bg_sub3" sid="244287089050788">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690354333576583" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Downloads\bg-tutor-sublvl-3.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -2826,6 +2883,25 @@
             <object-type name="TxSkor4" sid="631274213756190">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="home_lvl4" sid="935611200495836">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256723637151295" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\TbHome.png">
+                            <collision-poly>
+                                <point x="0.145946" y="0.139175" />
+                                <point x="0.5" y="0" />
+                                <point x="0.848649" y="0.14433" />
+                                <point x="1" y="0.5" />
+                                <point x="0.854054" y="0.860825" />
+                                <point x="0.5" y="0.997423" />
+                                <point x="0.154054" y="0.853093" />
+                                <point x="0.0027027" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="SubLvl1">
             <object-type name="bg_sublvl1" sid="805194656744351">
@@ -2833,6 +2909,176 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944036015564563" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\images\Subgame Rumah Menuju ke Taman Bermain.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="lantai1" sid="805809402642287">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="256295668047624">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="player" sid="673245291327118">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="873073814208951">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="218269724237615">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="184504344318196" speed="5">
+                        <frame duration="1" hotspotX="0.512037" hotspotY="0.469271" original-source="C:\Users\DELL\Pictures\Idle-Karakter\Tara\idle.png">
+                            <collision-poly>
+                                <point x="0.630949" y="0.883659" />
+                                <point x="0.328553" y="0.890858" />
+                                <point x="0.320849" y="0.486452" />
+                                <point x="0.205738" y="0.204962" />
+                                <point x="0.48844" y="0.121572" />
+                                <point x="0.782253" y="0.217349" />
+                                <point x="0.614008" y="0.494253" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="376370817543303" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Idle-Karakter\Tara\walk-2.png">
+                            <collision-poly>
+                                <point x="0.630949" y="0.883659" />
+                                <point x="0.328553" y="0.890858" />
+                                <point x="0.320849" y="0.486452" />
+                                <point x="0.205738" y="0.204962" />
+                                <point x="0.48844" y="0.121572" />
+                                <point x="0.782253" y="0.217349" />
+                                <point x="0.614008" y="0.494253" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Idle-Karakter\Tara\walk-3.png">
+                            <collision-poly>
+                                <point x="0.630949" y="0.883659" />
+                                <point x="0.328553" y="0.890858" />
+                                <point x="0.320849" y="0.486452" />
+                                <point x="0.205738" y="0.204962" />
+                                <point x="0.48844" y="0.121572" />
+                                <point x="0.782253" y="0.217349" />
+                                <point x="0.614008" y="0.494253" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="424876026629950" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Idle-Karakter\Tara\jump-2.png">
+                            <collision-poly>
+                                <point x="0.630949" y="0.883659" />
+                                <point x="0.328553" y="0.890858" />
+                                <point x="0.320849" y="0.486452" />
+                                <point x="0.205738" y="0.204962" />
+                                <point x="0.48844" y="0.121572" />
+                                <point x="0.782253" y="0.217349" />
+                                <point x="0.614008" y="0.494253" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="UI_Text" sid="109348632945756">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="sub_btn" sid="105354568562470">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="129298860004153">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579729844571456" speed="0">
+                        <frame duration="1" hotspotX="0.50193" hotspotY="0.501901" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\Asset Home copy.png">
+                            <collision-poly>
+                                <point x="0.147486" y="0.142228" />
+                                <point x="0.499792" y="0" />
+                                <point x="0.846282" y="0.148237" />
+                                <point x="0.987952" y="0.5" />
+                                <point x="0.84919" y="0.854567" />
+                                <point x="0.499792" y="0.995994" />
+                                <point x="0.154549" y="0.850962" />
+                                <point x="0.00623182" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.50193" hotspotY="0.501901" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\button-log-out.png" />
+                        <frame duration="1" hotspotX="0.494208" hotspotY="0.501901" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\tbreseteasy-sheet0.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="pause" sid="791959370665801">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="126650075166168">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="628919072467983">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="164586762326792" speed="5">
+                        <frame duration="1" hotspotX="0.503587" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\pause.png">
+                            <collision-poly>
+                                <point x="0.15208" y="0.0714286" />
+                                <point x="0.503587" y="0.527473" />
+                                <point x="0.760402" y="0.434066" />
+                                <point x="0.989957" y="0.5" />
+                                <point x="0.853659" y="0.923077" />
+                                <point x="0.503587" y="0.763736" />
+                                <point x="0.208034" y="0.714286" />
+                                <point x="0.00573888" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="sub_board" sid="439692983353533">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="895825913264948">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280222916158205" speed="0">
+                        <frame duration="1" hotspotX="0.492615" hotspotY="0.479508" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\Board 1.png">
+                            <collision-poly>
+                                <point x="0.0834057" y="0.0355191" />
+                                <point x="0.491746" y="0.114754" />
+                                <point x="0.869679" y="0.0846995" />
+                                <point x="0.898349" y="0.918033" />
+                                <point x="0.491746" y="0.877049" />
+                                <point x="0.104257" y="0.889344" />
+                                <point x="0.112076" y="0.478142" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="sub_pause" sid="926611044214623">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794566493451236" speed="0">
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\pausebuttoneasy-sheet0.png">
+                            <collision-poly>
+                                <point x="0.147002" y="0.144487" />
+                                <point x="0.499033" y="0" />
+                                <point x="0.851064" y="0.146388" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851064" y="0.853612" />
+                                <point x="0.499033" y="1" />
+                                <point x="0.147002" y="0.855513" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -2852,68 +3098,8 @@
         <object-type name="alurgame" sid="193743137484893">
             <plugin id="video" />
         </object-type>
-        <object-type name="awan" sid="388514540102892">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="623266693118947">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573271186706897" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Downloads\Desain Grafis.png">
-                        <collision-poly>
-                            <point x="0.205556" y="0.365132" />
-                            <point x="0.5" y="0.196546" />
-                            <point x="0.822685" y="0.314967" />
-                            <point x="0.875" y="0.5" />
-                            <point x="0.861574" y="0.754112" />
-                            <point x="0.5" y="0.765625" />
-                            <point x="0.171759" y="0.694901" />
-                            <point x="0.0712963" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="lantai1" sid="805809402642287">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Solid" sid="256295668047624">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Jumpthru" sid="145178098086261">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <texture />
-        </object-type>
-        <object-type name="player" sid="673245291327118">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="873073814208951">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="ScrollTo" sid="218269724237615">
-                    <behavior id="scrollto" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184504344318196" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\Idle-Karakter\Tara\idle.png">
-                        <collision-poly>
-                            <point x="0.292593" y="0.164583" />
-                            <point x="0.5" y="0.140625" />
-                            <point x="0.69537" y="0.171354" />
-                            <point x="0.717593" y="0.5" />
-                            <point x="0.697222" y="0.829687" />
-                            <point x="0.5" y="0.916667" />
-                            <point x="0.369444" y="0.792188" />
-                            <point x="0.355556" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
+        <object-type name="Keyboard" sid="967390572122608">
+            <plugin id="Keyboard" />
         </object-type>
     </object-folder>
     <families>
@@ -2937,6 +3123,10 @@
         <layout>Alur_Game_LO.xml</layout>
         <layout>Level_4_LO.xml</layout>
         <layout>SubLvl1_LO.xml</layout>
+        <layout>Tutor_Lvl4_LO.xml</layout>
+        <layout>Tutor_Sub1_LO.xml</layout>
+        <layout>Tutor_Sub2_LO.xml</layout>
+        <layout>Tutor_Sub3_LO.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game_Easy_ES.xml</event-sheet>
@@ -2952,6 +3142,10 @@
         <event-sheet>Alur_Game_ES.xml</event-sheet>
         <event-sheet>Level_4_ES.xml</event-sheet>
         <event-sheet>SubLvl1_ES.xml</event-sheet>
+        <event-sheet>Tutor_Lvl4_ES.xml</event-sheet>
+        <event-sheet>Tutor_Sub1_ES.xml</event-sheet>
+        <event-sheet>Tutor_Sub2_ES.xml</event-sheet>
+        <event-sheet>Tutor_Sub3_SE.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="4">
@@ -2975,6 +3169,7 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="59" />
+        <global-instance type="Keyboard" uid="189" />
     </global-instances>
     <sounds-folder>
         <file name="sound-right.ogg" />

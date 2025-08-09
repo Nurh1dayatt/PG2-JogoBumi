@@ -11,10 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Home_LO</layout>
-        <layout order="2">Level_4_LO</layout>
-        <layout active="1" order="4">SubLvl1_LO</layout>
+        <layout order="3">SubLvl1_LO</layout>
+        <layout active="1" order="5">Tim_LO</layout>
         <event-sheet order="1">Home_ES</event-sheet>
-        <event-sheet order="3">Level_4_ES</event-sheet>
+        <event-sheet order="2">Level_List_ES</event-sheet>
+        <event-sheet order="4">SubLvl1_ES</event-sheet>
+        <event-sheet order="6">Tim_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -33,15 +35,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/GameHardAsset/" />
         <folder expanded="0" path="object-folder/LevelListAsset/" />
         <folder expanded="0" path="object-folder/Game_Info/" />
-        <folder expanded="0" path="object-folder/TimAsset/" />
+        <folder expanded="1" path="object-folder/TimAsset/" />
         <folder expanded="0" path="object-folder/TutorAsset/" />
-        <folder expanded="0" path="object-folder/TutorAsset/Easy/" />
-        <folder expanded="0" path="object-folder/TutorAsset/Medium/" />
-        <folder expanded="0" path="object-folder/TutorAsset/Hard/" />
+        <folder expanded="0" path="object-folder/TutorAsset/Lvl1/" />
+        <folder expanded="0" path="object-folder/TutorAsset/Lvl2/" />
+        <folder expanded="0" path="object-folder/TutorAsset/Lvl3/" />
+        <folder expanded="0" path="object-folder/TutorAsset/Lvl4/" />
+        <folder expanded="0" path="object-folder/TutorAsset/SubLvl/" />
         <folder expanded="0" path="object-folder/UI/" />
         <folder expanded="0" path="object-folder/UIKarakter/" />
         <folder expanded="0" path="object-folder/Level_4/" />
-        <folder expanded="1" path="object-folder/SubLvl1/" />
+        <folder expanded="0" path="object-folder/SubLvl1/" />
         <folder expanded="0" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -126,6 +130,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/LevelListHomeButton/" />
         <folder expanded="1" path="animation-folder/buttonlvl/" />
         <folder expanded="1" path="animation-folder/o/" />
+        <folder expanded="1" path="animation-folder/awan/" />
+        <folder expanded="1" path="animation-folder/maptitlev/" />
         <folder expanded="1" path="animation-folder/bginfo/" />
         <folder expanded="1" path="animation-folder/buttonleft/" />
         <folder expanded="1" path="animation-folder/buttonright/" />
@@ -136,10 +142,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/pengantar/" />
         <folder expanded="1" path="animation-folder/gamplay/" />
         <folder expanded="1" path="animation-folder/TbHome_Tim/" />
-        <folder expanded="1" path="animation-folder/jogobumiTIM/" />
-        <folder expanded="1" path="animation-folder/anggota2/" />
         <folder expanded="1" path="animation-folder/TbAnOrganikTim/" />
         <folder expanded="1" path="animation-folder/TsOrganikTim/" />
+        <folder expanded="1" path="animation-folder/wiki/" />
+        <folder expanded="1" path="animation-folder/arah_1/" />
+        <folder expanded="1" path="animation-folder/arah_2/" />
         <folder expanded="1" path="animation-folder/bgtutoreasy/" />
         <folder expanded="1" path="animation-folder/btlefteasy/" />
         <folder expanded="1" path="animation-folder/btmulaieasy/" />
@@ -149,6 +156,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btlefthard/" />
         <folder expanded="1" path="animation-folder/btmulaihard/" />
         <folder expanded="1" path="animation-folder/bgtutorhard/" />
+        <folder expanded="1" path="animation-folder/tutor_lvl4/" />
+        <folder expanded="1" path="animation-folder/bg_sub1/" />
+        <folder expanded="1" path="animation-folder/bg_sub2/" />
+        <folder expanded="1" path="animation-folder/bg_sub3/" />
         <folder expanded="1" path="animation-folder/ui_tim/" />
         <folder expanded="1" path="animation-folder/bgtutor1/" />
         <folder expanded="1" path="animation-folder/bgtutor2/" />
@@ -175,8 +186,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Post_8/" />
         <folder expanded="1" path="animation-folder/Post_9/" />
         <folder expanded="1" path="animation-folder/ScoreBoard4/" />
+        <folder expanded="1" path="animation-folder/home_lvl4/" />
         <folder expanded="1" path="animation-folder/bg_sublvl1/" />
-        <folder expanded="1" path="animation-folder/awan/" />
         <folder expanded="1" path="animation-folder/player/" />
+        <folder expanded="1" path="animation-folder/sub_btn/" />
+        <folder expanded="1" path="animation-folder/pause/" />
+        <folder expanded="1" path="animation-folder/sub_board/" />
+        <folder expanded="1" path="animation-folder/sub_pause/" />
     </folders-expanded>
 </c2uistate>
