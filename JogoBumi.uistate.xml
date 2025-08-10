@@ -10,14 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Home_LO</layout>
-        <layout order="3">SubLvl1_LO</layout>
-        <layout order="4">SubLvl2_LO</layout>
-        <layout order="5">SubLvl3_LO</layout>
-        <layout order="6">Level_List_LO</layout>
+        <layout order="0">Home_LO</layout>
+        <layout order="2">Tim_LO</layout>
         <event-sheet order="1">Home_ES</event-sheet>
-        <event-sheet order="2">SubLvl1_ES</event-sheet>
-        <event-sheet order="7">Level_List_ES</event-sheet>
+        <event-sheet active="1" order="3">Tim_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -47,7 +43,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/UIKarakter/" />
         <folder expanded="0" path="object-folder/Level_4/" />
         <folder expanded="0" path="object-folder/SubLvl1/" />
-        <folder expanded="1" path="object-folder/SubLvl2/" />
+        <folder expanded="0" path="object-folder/SubLvl2/" />
         <folder expanded="1" path="object-folder/SubLvl3/" />
         <folder expanded="0" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
@@ -199,7 +195,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/sub1_obs/" />
         <folder expanded="1" path="animation-folder/poin_spsials/" />
         <folder expanded="1" path="animation-folder/enemy/" />
+        <folder expanded="1" path="animation-folder/sub_spesial/" />
+        <folder expanded="1" path="animation-folder/finis/" />
         <folder expanded="1" path="animation-folder/bg_sublvl2/" />
+        <folder expanded="1" path="animation-folder/enamy2/" />
+        <folder expanded="1" path="animation-folder/sub2_obs/" />
         <folder expanded="1" path="animation-folder/bg_sublvl3/" />
+        <folder expanded="1" path="animation-folder/sub3_obs/" />
+        <folder expanded="1" path="animation-folder/enamy3/" />
     </folders-expanded>
 </c2uistate>
