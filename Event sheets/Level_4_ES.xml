@@ -544,8 +544,8 @@
                             <param id="0" name="Seconds">1.0</param>
                         </action>
                         <action id="33" name="Stop all" sid="763641990765801" type="Audio" />
-                        <action id="-2" name="Go to layout" sid="597030621330499" type="System">
-                            <param id="0" name="Layout">Level_List_LO</param>
+                        <action id="-2" name="Go to layout" sid="243170527740848" type="System">
+                            <param id="0" name="Layout">Cutscene9_LO</param>
                         </action>
                     </actions>
                 </event-block>
@@ -604,7 +604,7 @@
                         </action>
                         <action id="33" name="Stop all" sid="646006448459537" type="Audio" />
                         <action id="-2" name="Go to layout" sid="687933462652004" type="System">
-                            <param id="0" name="Layout">Level_List_LO</param>
+                            <param id="0" name="Layout">Cutscene9_LO</param>
                         </action>
                     </actions>
                 </event-block>
@@ -723,8 +723,8 @@
                             <param id="0" name="Seconds">1.0</param>
                         </action>
                         <action id="33" name="Stop all" sid="115501697399471" type="Audio" />
-                        <action id="-2" name="Go to layout" sid="237935767893423" type="System">
-                            <param id="0" name="Layout">Level_List_LO</param>
+                        <action id="-2" name="Go to layout" sid="390376814243979" type="System">
+                            <param id="0" name="Layout">Cutscene9_LO</param>
                         </action>
                     </actions>
                 </event-block>
@@ -782,8 +782,8 @@
                             <param id="0" name="Seconds">1.0</param>
                         </action>
                         <action id="33" name="Stop all" sid="751523362584456" type="Audio" />
-                        <action id="-2" name="Go to layout" sid="869951294163198" type="System">
-                            <param id="0" name="Layout">Level_List_LO</param>
+                        <action id="-2" name="Go to layout" sid="586138974451399" type="System">
+                            <param id="0" name="Layout">Cutscene9_LO</param>
                         </action>
                     </actions>
                 </event-block>

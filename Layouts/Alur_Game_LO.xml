@@ -56,19 +56,19 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1797</x>
-                        <y>1024</y>
+                        <x>1816</x>
+                        <y>976</y>
                         <z>0</z>
-                        <width>225.264633179</width>
-                        <height>87.563682556</height>
+                        <width>167.832214355</width>
+                        <height>170.753860474</height>
                         <depth>0</depth>
-                        <hotspotX>0.501567423</hotspotX>
+                        <hotspotX>0.500967145</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

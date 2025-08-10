@@ -2497,7 +2497,7 @@
             <object-type name="skipbtn" sid="294803508919838">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700065939999694" speed="5">
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700065939999694" speed="0">
                         <frame duration="1" hotspotX="0.501567" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\Group 10.png">
                             <collision-poly>
                                 <point x="0.0532915" y="0.137097" />
@@ -2510,6 +2510,7 @@
                                 <point x="0" y="0.5" />
                             </collision-poly>
                         </frame>
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\button-skip (2).png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -3350,6 +3351,118 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="CutScene">
+            <object-type name="ctsn1" sid="609227229095865">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="824671298738033" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Introduction.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Introduction (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Introduction (2).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cut1_arah" sid="932919438144082">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="cut_skip" sid="377781522345526">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474014289505892" speed="5">
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\button-skip (2).png">
+                            <collision-poly>
+                                <point x="0.147486" y="0.142228" />
+                                <point x="0.499792" y="0" />
+                                <point x="0.846282" y="0.148237" />
+                                <point x="0.987952" y="0.5" />
+                                <point x="0.84919" y="0.854567" />
+                                <point x="0.499792" y="0.995994" />
+                                <point x="0.154549" y="0.850962" />
+                                <point x="0.00623182" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ctns3" sid="230766000358424">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839486831186546" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Cutscene Sub-Level 1.2-(1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Cutscene Sub-Level 1.2-(2).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ctsn2" sid="226079130179966">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812560898069948" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Lv1-Cutscene-first (1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Cutscene Level 1-(1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Lv1-Cutscene-first (2).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ctsn4" sid="275488048411167">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724867448609901" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Cutscene Level 2-(1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Cutscene Level 2-(2).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\Cutscene Level 2-(3).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ctsn5" sid="227727779312893">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320853105670276" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\04-Cutscene Sub-Level 2.2_ Arah ke Sungai\Cutscene Sub-Level 2.2-(1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\04-Cutscene Sub-Level 2.2_ Arah ke Sungai\Cutscene Sub-Level 2.2-(2).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ctsn6" sid="716172367435036">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="381496845022514" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\05-Cutscene Level 3_ Sungai Desa\Cutscene Level 3-(1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\05-Cutscene Level 3_ Sungai Desa\Cutscene Level 3-(2).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\05-Cutscene Level 3_ Sungai Desa\Cutscene Level 3-(3).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ctsn7" sid="167870647322975">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="314023159120374" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\06-Cutscene Sub-Level 3.2_ Menuju Pabrik\Cutscene Sub-Level 3.2-(1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\06-Cutscene Sub-Level 3.2_ Menuju Pabrik\Cutscene Sub-Level 3.2-(2).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ctsn9" sid="574082679460800">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="987954200804491" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\08-Penutup Sementara\Penutup Sementara-(1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\08-Penutup Sementara\Penutup Sementara-(2).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\08-Penutup Sementara\Penutup Sementara-(3).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ctsn8" sid="612026435865545">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438441968201902" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\07-Cutscene Level 4_ Pabrik Terlupakan\Cutscene Level 4-(1).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\07-Cutscene Level 4_ Pabrik Terlupakan\Cutscene Level 4-(2).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\frame-cutscene\07-Cutscene Level 4_ Pabrik Terlupakan\Cutscene Level 4-(3).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Touch" sid="208015409852910">
             <plugin id="Touch" />
         </object-type>
@@ -3377,6 +3490,17 @@
         </family>
     </families>
     <layout-folder>
+        <layout-folder name="Cutscene_LO">
+            <layout>Cutscene1_LO.xml</layout>
+            <layout>Cutscene2_LO.xml</layout>
+            <layout>Cutscene3_LO.xml</layout>
+            <layout>Cutscene4_LO.xml</layout>
+            <layout>Cutscene5_LO.xml</layout>
+            <layout>Cutscene6_LO.xml</layout>
+            <layout>Cutscene7_LO.xml</layout>
+            <layout>Cutscene8_LO.xml</layout>
+            <layout>Cutscene9_LO.xml</layout>
+        </layout-folder>
         <layout>Game_Easy_LO.xml</layout>
         <layout>Home_LO.xml</layout>
         <layout>Game_Medium_LO.xml</layout>
@@ -3398,6 +3522,17 @@
         <layout>Tutor_Sub3_LO.xml</layout>
     </layout-folder>
     <event-folder>
+        <event-folder name="Cutscene_ES">
+            <event-sheet>Cutscene1_ES.xml</event-sheet>
+            <event-sheet>Cutscene2_ES.xml</event-sheet>
+            <event-sheet>Cutscene3_ES.xml</event-sheet>
+            <event-sheet>Cutscene4_ES.xml</event-sheet>
+            <event-sheet>Cutscene5_ES.xml</event-sheet>
+            <event-sheet>Cutscene6_ES.xml</event-sheet>
+            <event-sheet>Cutscene7_ES.xml</event-sheet>
+            <event-sheet>Cutscene8_ES.xml</event-sheet>
+            <event-sheet>Cutscene9_ES.xml</event-sheet>
+        </event-folder>
         <event-sheet>Game_Easy_ES.xml</event-sheet>
         <event-sheet>Home_ES.xml</event-sheet>
         <event-sheet>Game_Medium_ES.xml</event-sheet>
@@ -3451,6 +3586,9 @@
         <file name="hard.ogg" />
         <file name="MainBGM.ogg" />
         <file name="medium.ogg" />
+        <file name="sub1.ogg" />
+        <file name="sub2.ogg" />
+        <file name="sub3.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

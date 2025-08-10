@@ -11,6 +11,12 @@
             <actions>
                 <action id="-21" name="Reset global variables" sid="655928094755209" type="System" />
                 <action id="33" name="Stop all" sid="629722448111602" type="Audio" />
+                <action id="0" name="Play" sid="632608928143587" type="Audio">
+                    <param id="0" name="Audio file">sub2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Call function" sid="575016150739665" type="Function">
                     <param id="0" name="Name">&quot;UISetting&quot;</param>
                     <param id="1" name="Parameter {n}"></param>

@@ -17,7 +17,7 @@
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="665106858097408" type="System">
-                    <param id="0" name="Layout">Game_Medium_LO</param>
+                    <param id="0" name="Layout">Cutscene4_LO</param>
                 </action>
             </actions>
         </event-block>

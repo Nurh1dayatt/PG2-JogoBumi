@@ -23,10 +23,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="KalahGM" />
+    <active-layer name="contn" />
     <layers>
         <layer locked="1" name="BG" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="ISI" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="contn" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="KalahGM" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="MenangGM" parallax-in-editor="0" visible="1" />
     </layers>
