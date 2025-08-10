@@ -28,6 +28,7 @@
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -3082,6 +3083,91 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="sub1_obs" sid="884025026773498">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="953835452252135">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Jumpthru" sid="844229623049864">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519682214941923" speed="0">
+                        <frame duration="1" hotspotX="0.501424" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\ts-o.png" />
+                        <frame duration="1" hotspotX="0.501424" hotspotY="0.5" original-source="D:\Construct2\Bahan\Butoon&amp;Icon\ts-an.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="poin_spsials" sid="119567934484328">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="676190561266591">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565528861327653" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="D:\Construct2\Bahan\images\jenissampahhard-sheet9.png">
+                            <collision-poly>
+                                <point x="0.183197" y="0.324119" />
+                                <point x="0.5" y="0.0552885" />
+                                <point x="0.872283" y="0.225962" />
+                                <point x="0.456295" y="0.5" />
+                                <point x="0.899909" y="0.822917" />
+                                <point x="0.5" y="0.879006" />
+                                <point x="0.169837" y="0.699519" />
+                                <point x="0.0473279" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="enemy" sid="952404461741128">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="500774240287421">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979332810089195" speed="5">
+                        <frame duration="1" hotspotX="0.497088" hotspotY="0.483991" original-source="D:\Construct2\Bahan\Idle-Karakter\TongsampahBerjalan\idle.png">
+                            <collision-poly>
+                                <point x="0.78666" y="0.483991" />
+                                <point x="0.737427" y="0.726254" />
+                                <point x="0.497088" y="0.996798" />
+                                <point x="0.275278" y="0.707577" />
+                                <point x="0.181048" y="0.483991" />
+                                <point x="0.160932" y="0.145144" />
+                                <point x="0.497088" y="0.00320171" />
+                                <point x="0.825304" y="0.153148" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="SubLvl2">
+            <object-type name="bg_sublvl2" sid="692201133800473">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567413574011153" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\images\bg_sublvl2 3.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="SubLvl3">
+            <object-type name="bg_sublvl3" sid="902685772000209">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528271556946281" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\images\Group 32 (1) 2.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Touch" sid="208015409852910">
             <plugin id="Touch" />
@@ -3123,6 +3209,8 @@
         <layout>Alur_Game_LO.xml</layout>
         <layout>Level_4_LO.xml</layout>
         <layout>SubLvl1_LO.xml</layout>
+        <layout>SubLvl2_LO.xml</layout>
+        <layout>SubLvl3_LO.xml</layout>
         <layout>Tutor_Lvl4_LO.xml</layout>
         <layout>Tutor_Sub1_LO.xml</layout>
         <layout>Tutor_Sub2_LO.xml</layout>
@@ -3146,6 +3234,8 @@
         <event-sheet>Tutor_Sub1_ES.xml</event-sheet>
         <event-sheet>Tutor_Sub2_ES.xml</event-sheet>
         <event-sheet>Tutor_Sub3_SE.xml</event-sheet>
+        <event-sheet>SubLvl2_ES.xml</event-sheet>
+        <event-sheet>SubLvl3_ES.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="4">

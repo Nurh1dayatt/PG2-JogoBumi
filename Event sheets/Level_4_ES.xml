@@ -530,7 +530,7 @@
                         </action>
                         <action id="33" name="Stop all" sid="763641990765801" type="Audio" />
                         <action id="-2" name="Go to layout" sid="597030621330499" type="System">
-                            <param id="0" name="Layout">Home_LO</param>
+                            <param id="0" name="Layout">Level_List_LO</param>
                         </action>
                     </actions>
                 </event-block>
@@ -589,7 +589,7 @@
                         </action>
                         <action id="33" name="Stop all" sid="646006448459537" type="Audio" />
                         <action id="-2" name="Go to layout" sid="687933462652004" type="System">
-                            <param id="0" name="Layout">Home_LO</param>
+                            <param id="0" name="Layout">Level_List_LO</param>
                         </action>
                     </actions>
                 </event-block>
@@ -709,7 +709,7 @@
                         </action>
                         <action id="33" name="Stop all" sid="115501697399471" type="Audio" />
                         <action id="-2" name="Go to layout" sid="237935767893423" type="System">
-                            <param id="0" name="Layout">Home_LO</param>
+                            <param id="0" name="Layout">Level_List_LO</param>
                         </action>
                     </actions>
                 </event-block>
@@ -768,7 +768,7 @@
                         </action>
                         <action id="33" name="Stop all" sid="751523362584456" type="Audio" />
                         <action id="-2" name="Go to layout" sid="869951294163198" type="System">
-                            <param id="0" name="Layout">Home_LO</param>
+                            <param id="0" name="Layout">Level_List_LO</param>
                         </action>
                     </actions>
                 </event-block>
