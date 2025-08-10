@@ -11,9 +11,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Home_LO</layout>
-        <layout order="2">Tim_LO</layout>
+        <layout active="1" order="2">Level_List_LO</layout>
+        <layout order="4">Level_4_LO</layout>
         <event-sheet order="1">Home_ES</event-sheet>
-        <event-sheet active="1" order="3">Tim_ES</event-sheet>
+        <event-sheet order="3">Level_4_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -44,11 +45,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Level_4/" />
         <folder expanded="0" path="object-folder/SubLvl1/" />
         <folder expanded="0" path="object-folder/SubLvl2/" />
-        <folder expanded="1" path="object-folder/SubLvl3/" />
-        <folder expanded="0" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="object-folder/SubLvl3/" />
+        <folder expanded="0" path="object-folder/CutScene/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Cutscene_LO/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Cutscene_ES/" />
         <folder expanded="1" path="file-folder/" />
-        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/HomeScreen/" />
@@ -203,5 +207,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bg_sublvl3/" />
         <folder expanded="1" path="animation-folder/sub3_obs/" />
         <folder expanded="1" path="animation-folder/enamy3/" />
+        <folder expanded="1" path="animation-folder/ctsn1/" />
+        <folder expanded="1" path="animation-folder/cut_skip/" />
+        <folder expanded="1" path="animation-folder/ctns3/" />
+        <folder expanded="1" path="animation-folder/ctsn2/" />
+        <folder expanded="1" path="animation-folder/ctsn4/" />
+        <folder expanded="1" path="animation-folder/ctsn5/" />
+        <folder expanded="1" path="animation-folder/ctsn6/" />
+        <folder expanded="1" path="animation-folder/ctsn7/" />
+        <folder expanded="1" path="animation-folder/ctsn9/" />
+        <folder expanded="1" path="animation-folder/ctsn8/" />
     </folders-expanded>
 </c2uistate>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Cutscene3_ES</name>
+    <events>
+        <event-block sid="181126525613270">
+            <conditions>
+                <condition id="17" name="On tap object" sid="264186717656446" type="Touch">
+                    <param id="0" name="Object">cut_skip</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="332834390657499" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="133757818537615" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="758742773649551" type="Audio" />
+                <action id="-2" name="Go to layout" sid="468189515775272" type="System">
+                    <param id="0" name="Layout">SubLvl1_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="978503175389808">
+            <conditions>
+                <condition id="3" name="On touched object" sid="379761461130384" type="Touch">
+                    <param id="0" name="Object">cut1_arah</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="176073226708070" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="774274257296439">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="328345172292028" type="ctns3">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">Self.AnimationFrameCount-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="199487242344653" type="ctns3">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="838347695574502">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="592007010737679" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="572933066934934" type="ctns3">
+                            <param id="0" name="Frame number">Self.AnimationFrame+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

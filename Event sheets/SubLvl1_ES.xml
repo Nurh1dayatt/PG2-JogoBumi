@@ -15,6 +15,12 @@
                     <param id="0" name="Name">&quot;UISetting&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
+                <action id="0" name="Play" sid="903577923878432" type="Audio">
+                    <param id="0" name="Audio file">sub1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="Ini semua fungsi kontrol karakter" sid="117489425392866" title="Fungsi Control">

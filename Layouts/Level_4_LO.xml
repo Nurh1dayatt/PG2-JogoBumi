@@ -52,7 +52,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="ISI" sid="676080696278445">
+        <layer name="contn" sid="676080696278445">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
