@@ -13,6 +13,13 @@
             </conditions>
             <actions>
                 <action id="-21" name="Reset global variables" sid="932746121158640" type="System" />
+                <action id="33" name="Stop all" sid="233633653098637" type="Audio" />
+                <action id="0" name="Play" sid="105692962053655" type="Audio">
+                    <param id="0" name="Audio file">medium</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Call function" sid="693668580726713" type="Function">
                     <param id="0" name="Name">&quot;init_lvl4&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
@@ -79,13 +86,6 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">Post_9.X</param>
                     <param id="3" name="Y">Post_9.Y</param>
-                </action>
-                <action id="33" name="Stop all" sid="139734386897878" type="Audio" />
-                <action id="0" name="Play" sid="105692962053655" type="Audio">
-                    <param id="0" name="Audio file">medium</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">-10</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -379,12 +379,27 @@
             </conditions>
             <actions />
             <sub-events>
+                <event-block sid="624392200246458">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="578483398008912" type="System">
+                            <param id="0" name="Variable">skor4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="877176300264157" type="Function">
+                            <param id="0" name="Name">&quot;init_lvl4&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="936922431661925">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="416073655295646" type="System">
                             <param id="0" name="Variable">skor4</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">50</param>
+                            <param id="2" name="Value">180</param>
                         </condition>
                     </conditions>
                     <actions>
