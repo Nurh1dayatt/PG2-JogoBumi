@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SubLvl3_ES</name>
+    <events>
+        <event-block sid="828943684253451">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="830362466743653" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="610417474868343" type="Audio" />
+            </actions>
+        </event-block>
+        <event-group description="Ini semua fungsi kontrol karakter" sid="854563578957690" title="Fungsi Control3">
+            <sub-events>
+                <event-block sid="763197816314599">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="586696656432757" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="441221496632586" type="player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="964001559391557">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="424892579568803" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="622512014568350" type="player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="461789474142958" title="Fungsi Animasi3">
+            <sub-events>
+                <comment>Ini adalah fungsi animasi bergerak</comment>
+                <event-block sid="185099237851256">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="199954602101666" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="633464892325190" type="player">
+                            <param id="0" name="Animation">&quot;walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Fungsi tidak bergerak - tidak loncat</comment>
+                <event-block sid="355403958650928">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="482095015520349" type="System" />
+                        <condition behavior="Platform" disabled="1" id="3" inverted="1" name="Is jumping" sid="959540499325384" type="player" />
+                        <condition id="2" inverted="1" name="Is playing" sid="488324472239417" type="player">
+                            <param id="0" name="Animation">&quot;jump&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="478133158255761" type="player">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Fungsi karakter loncat / sedang loncat</comment>
+                <event-block sid="576244299387439">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="740859289719842" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="312064470454306" type="player">
+                            <param id="0" name="Animation">&quot;jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Fungsi karakter selesai loncat</comment>
+                <event-block sid="328452388112663">
+                    <conditions>
+                        <condition behavior="Platform" id="4" name="Is falling" sid="145780951125564" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="375967696827952" type="player">
+                            <param id="0" name="Animation">&quot;jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Fungsi karakter jatuh</comment>
+                <event-block sid="628411165489785">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="115210708364067" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="178075084888059" type="player">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="fungsi pause sub game" sid="809358760856550" title="StopSetting3">
+            <sub-events>
+                <event-block sid="978613789303715">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="426948575197475" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="619426281600400" type="pause">
+                            <param id="0" name="Pin to">sub_board</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="754715650725008" type="sub_btn">
+                            <param id="0" name="Pin to">sub_board</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="775734274662617" type="sub_board">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="577985163621442" type="System">
+                            <param id="0" name="Layer">&quot;stop_pop&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="773199007656886">
+                    <conditions>
+                        <condition id="0" name="On function" sid="206744119858235" type="Function">
+                            <param id="0" name="Name">&quot;sub_pop-in&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="540737265294908" type="sub_board">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="866794674424345" type="sub_board">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="573860657887961" type="sub_board">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="908683931027129">
+                    <conditions>
+                        <condition id="0" name="On function" sid="625880124077273" type="Function">
+                            <param id="0" name="Name">&quot;sub_pop-out&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="925435141549039" type="sub_board">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="453488960901616" type="sub_board">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="878485332102742" type="sub_board">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="755763521206126">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="810616115831665" type="Touch">
+                            <param id="0" name="Object">sub_pause</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="917741778326371" type="System">
+                            <param id="0" name="Layer">&quot;stop_pop&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="430687651436652" type="Function">
+                            <param id="0" name="Name">&quot;sub_pop-in&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="486266620548889" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="fungsi Jika pop up visibel" sid="467292234471100" title="Stop Pop visibel3">
+            <sub-events>
+                <event-block sid="357419727771587">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="451372446875644" type="System">
+                            <param id="0" name="Layer">&quot;stop_pop&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="462391279131370">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="708935825917533" type="Touch">
+                                    <param id="0" name="Object">sub_btn</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="383218261655659">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="621538252706751" type="sub_btn">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="133254726910546" type="Function">
+                                            <param id="0" name="Name">&quot;sub_pop-out&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Play" sid="532396053174323" type="Audio">
+                                            <param id="0" name="Audio file">button_click</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="175238242312017" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="675960804445173" type="System">
+                                            <param id="0" name="Layer">&quot;stop_pop&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="948779874226229">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="592221346867507" type="sub_btn">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="621056535617391" type="Audio">
+                                            <param id="0" name="Audio file">button_click</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="390364831387296" type="Function">
+                                            <param id="0" name="Name">&quot;sub_pop-out&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="696963613619891" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action id="-26" name="Restart layout" sid="574040437636576" type="System" />
+                                        <action id="-4" name="Set layer visible" sid="821888744797223" type="System">
+                                            <param id="0" name="Layer">&quot;stop_pop&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="968372394276422">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="506351484888156" type="sub_btn">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="337332408540922" type="Audio">
+                                            <param id="0" name="Audio file">button_click</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="952913566090538" type="Function">
+                                            <param id="0" name="Name">&quot;sub_pop-out&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="424188213447187" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="283256207703658" type="System">
+                                            <param id="0" name="Layer">&quot;stop_pop&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="33" name="Stop all" sid="341437712503972" type="Audio" />
+                                        <action id="-2" name="Go to layout" sid="393711201571160" type="System">
+                                            <param id="0" name="Layout">Level_List_LO</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
